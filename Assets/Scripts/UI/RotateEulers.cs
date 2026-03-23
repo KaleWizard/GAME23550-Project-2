@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RotateEulers : MonoBehaviour
 {
-    [SerializeField] Vector3 rotation;
+    public Vector3 rotation;
 
     
     void Update()
