@@ -15,7 +15,9 @@ namespace NodeCanvas.Tasks.Actions
         [SliderField(0, 1)]
         public float volume = 1;
         public bool waitActionFinish;
-
+        //////////////////////////////
+        public float waitRatio = 1;
+        //////////////////////////////
         protected override string info => "Play " + audioClip.ToString();
         public override float length => !audioClip.isNull && waitActionFinish ? audioClip.value.length : 0;
 
@@ -27,7 +29,8 @@ namespace NodeCanvas.Tasks.Actions
         }
 
         protected override void OnUpdate() {
-            if ( elapsedTime >= audioClip.value.length ) {
+                                                        ///////////
+            if ( elapsedTime >= audioClip.value.length * waitRatio ) {
                 EndAction();
             }
         }
