@@ -45,14 +45,14 @@ public class PlayerController : MonoBehaviour
         }
         input = Vector2.ClampMagnitude(input, 1);
 
-        return lastInput = Vector2.Lerp(lastInput, input, lerpAccel);
+        return lastInput = Vector2.Lerp(lastInput, input, 1 - Mathf.Pow(1 - lerpAccel, Time.deltaTime));
     }
 
     void Rotate(Vector3 direction)
     {
         if (direction == Vector3.zero) return;
         Quaternion target = Quaternion.LookRotation(direction);
-        transform.rotation = Quaternion.Lerp(transform.rotation, target, lerpAccel);
+        transform.rotation = Quaternion.Lerp(transform.rotation, target, 1 - Mathf.Pow(1 - lerpAccel, Time.deltaTime));
     }
     
     void Move(Vector3 direction)
