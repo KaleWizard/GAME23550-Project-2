@@ -18,7 +18,7 @@ public class PlayerHealthUI : MonoBehaviour
     {
         for (int i = 0; i < toDisable.Count; i++)
         {
-            toDisable[i].SetActive(i <= value);
+            toDisable[i].SetActive(i < value);
         }
     }
 }

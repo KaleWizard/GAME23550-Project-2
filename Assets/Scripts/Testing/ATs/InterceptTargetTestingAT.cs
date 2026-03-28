@@ -23,15 +23,15 @@ namespace NodeCanvas.Tasks.Actions {
         }
 
 		protected override void OnExecute() {
-			Vector2 random = Random.insideUnitCircle.normalized * distance;
-			Vector3 forward = characterBBP.value.direction;
-			Vector3 right = new(forward.z, forward.y, -forward.x);
+			//Vector2 random = Random.insideUnitCircle.normalized * distance;
+			//Vector3 forward = characterBBP.value.direction;
+			//Vector3 right = new(forward.z, forward.y, -forward.x);
 
-            Vector3 targetPos = characterBBP.value.transform.position 
-				+ (distance + Random.Range(randomization / 2, randomization * 1.5f)) * forward 
-				+ new Vector3(random.x, 0, random.y)
-				+ horizontalModifier * characterBBP.value.transform.right;
-			targetBBP.value.position = targetPos;
+   //         Vector3 targetPos = characterBBP.value.transform.position 
+			//	+ (distance + Random.Range(randomization / 2, randomization * 1.5f)) * forward 
+			//	+ new Vector3(random.x, 0, random.y)
+			//	+ horizontalModifier * characterBBP.value.transform.right;
+			//targetBBP.value.position = targetPos;
 			EndAction(true);
 		}
 	}
