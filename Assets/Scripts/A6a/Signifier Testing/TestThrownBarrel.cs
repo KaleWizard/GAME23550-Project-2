@@ -16,7 +16,7 @@ public class TestThrownBarrel : MonoBehaviour
 
     float heightIncrease;
 
-    float timeToTarget;
+    float timeToTarget = 100000f;
     float progress = 0;
 
     float radius;

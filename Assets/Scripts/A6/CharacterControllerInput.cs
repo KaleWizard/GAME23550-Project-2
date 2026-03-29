@@ -8,7 +8,19 @@ public class CharacterControllerInput : MonoBehaviour
 
     CharacterController controller;
 
-    [HideInInspector] public Vector2 input;
+    [HideInInspector] public Vector2 input
+    {
+        get => lastInput;
+        set
+        {
+            lastInput = value;
+            consumed = false;
+        }
+    }
+
+    Vector2 lastInput;
+    bool consumed = true;
+
     Vector2 moveDirection = Vector3.zero;
 
     void Start()
@@ -26,7 +38,8 @@ public class CharacterControllerInput : MonoBehaviour
 
     void UpdateInput()
     {
-        input = Vector2.ClampMagnitude(input, 1);
+        Vector2 input = consumed ? Vector2.zero : Vector2.ClampMagnitude(lastInput, 1);
+        consumed = true;
 
         moveDirection = Vector2.Lerp(moveDirection, input, 1 - Mathf.Pow(1 - lerpAccel, Time.deltaTime));
     }
