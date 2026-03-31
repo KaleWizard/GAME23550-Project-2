@@ -46,6 +46,7 @@ public class TestThrownBarrel : MonoBehaviour
         {
             OnImpact();
             Destroy(gameObject, 0.1f);
+            Destroy(this);
         }
     }
 

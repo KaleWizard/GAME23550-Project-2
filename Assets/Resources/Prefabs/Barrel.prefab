@@ -213,7 +213,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  explosionPrefab: {fileID: 0}
+  explosionPrefab: {fileID: 3118198696831091023, guid: 266c3627509f2684aa27fcc481c1b3fb, type: 3}
 --- !u!1 &9080948532119715988
 GameObject:
   m_ObjectHideFlags: 0
