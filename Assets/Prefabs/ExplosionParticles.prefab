@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8895442216138517960}
   - component: {fileID: 4179717590707065011}
   - component: {fileID: 232329726972757605}
+  - component: {fileID: 913221858411576166}
   m_Layer: 0
   m_Name: ExplosionParticles
   m_TagString: Untagged
@@ -4908,3 +4909,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyAfterSeconds
   seconds: 2
+--- !u!114 &913221858411576166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3118198696831091023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74885253e92f2624db20a6e35c2caa44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DamageSphere
+  damageOnStart: 1
+  layers:
+    serializedVersion: 2
+    m_Bits: 257
+  radius: 1

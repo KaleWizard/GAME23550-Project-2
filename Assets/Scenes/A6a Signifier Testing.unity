@@ -5215,6 +5215,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   health: 3
+  invulnerableTime: 1
+  destroyOnDeath: 0
   maxHealth: 0
 --- !u!114 &174050708
 MonoBehaviour:
@@ -5541,6 +5543,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 399822224}
+  - component: {fileID: 399822232}
   - component: {fileID: 399822228}
   - component: {fileID: 399822227}
   - component: {fileID: 399822226}
@@ -5738,6 +5741,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &399822232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399822223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a54d11470d2027429a579de397804ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  OnChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  health: 1
+  invulnerableTime: 0
+  destroyOnDeath: 1
+  maxHealth: 0
 --- !u!4 &403108285 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0ba87500f91c9ab42a2c6c3861638d6e, type: 3}
@@ -11390,6 +11415,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 812994588}
+  - component: {fileID: 812994594}
   - component: {fileID: 812994590}
   - component: {fileID: 812994587}
   - component: {fileID: 812994586}
@@ -11587,6 +11613,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &812994594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812994585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a54d11470d2027429a579de397804ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  OnChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  health: 1
+  invulnerableTime: 0
+  destroyOnDeath: 1
+  maxHealth: 0
 --- !u!1001 &815239688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16809,6 +16857,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1031824507}
+  - component: {fileID: 1031824515}
   - component: {fileID: 1031824511}
   - component: {fileID: 1031824510}
   - component: {fileID: 1031824509}
@@ -17006,6 +17055,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1031824515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031824506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a54d11470d2027429a579de397804ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  OnChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  health: 1
+  invulnerableTime: 0
+  destroyOnDeath: 1
+  maxHealth: 0
 --- !u!4 &1034544048 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 706b260f086c7df498b7203e535a0442, type: 3}
@@ -17020,6 +17091,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1052003654}
+  - component: {fileID: 1052003662}
   - component: {fileID: 1052003658}
   - component: {fileID: 1052003657}
   - component: {fileID: 1052003656}
@@ -17217,6 +17289,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1052003662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052003653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a54d11470d2027429a579de397804ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  OnChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  health: 1
+  invulnerableTime: 0
+  destroyOnDeath: 1
+  maxHealth: 0
 --- !u!4 &1064628515 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0ba87500f91c9ab42a2c6c3861638d6e, type: 3}
@@ -22253,6 +22347,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1202291757}
+  - component: {fileID: 1202291765}
   - component: {fileID: 1202291761}
   - component: {fileID: 1202291760}
   - component: {fileID: 1202291759}
@@ -22450,6 +22545,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1202291765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202291756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a54d11470d2027429a579de397804ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  OnChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  health: 1
+  invulnerableTime: 0
+  destroyOnDeath: 1
+  maxHealth: 0
 --- !u!1 &1213529615
 GameObject:
   m_ObjectHideFlags: 0
@@ -27963,6 +28080,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1718811984}
+  - component: {fileID: 1718811992}
   - component: {fileID: 1718811988}
   - component: {fileID: 1718811987}
   - component: {fileID: 1718811986}
@@ -28160,6 +28278,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1718811992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718811983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a54d11470d2027429a579de397804ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  OnChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  health: 1
+  invulnerableTime: 0
+  destroyOnDeath: 1
+  maxHealth: 0
 --- !u!1001 &1753672661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33894,7 +34034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: NodeCanvas::NodeCanvas.BehaviourTrees.BehaviourTreeOwner
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[{"_position":{"x":174.7041,"y":223.7191},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"0"},{"_action":{"actions":[{"barrelBBP":{"_name":"target","_targetVariableID":"cea363aa-6f1f-4e47-85d8-523f901b0e6e"},"$type":"NodeCanvas.Tasks.Actions.TestGetBarrelAT"},{"controllerBBP":{"_name":"controller","_targetVariableID":"7e25e255-a9b2-4b39-a129-d8e4ac053ea3"},"navAgentBBP":{"_name":"navAgent","_targetVariableID":"08a6a401-6f21-461e-ba7b-b0ebfc649ed9"},"targetBBP":{"_name":"target","_targetVariableID":"cea363aa-6f1f-4e47-85d8-523f901b0e6e"},"$type":"NodeCanvas.Tasks.Actions.TestNavigateToObjectAT"},{"gameObjectBBP":{"_name":"target","_targetVariableID":"cea363aa-6f1f-4e47-85d8-523f901b0e6e"},"$type":"NodeCanvas.Tasks.Actions.TestDestroyObjectAT"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":-93.09728,"y":403.196},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"1"},{"_action":{"executionMode":1,"actions":[{"animationClip":{"_value":1},"animationWrap":1,"$type":"NodeCanvas.Tasks.Actions.PlayAnimationSimple"},{"audioClip":{"_value":2},"waitActionFinish":true,"waitRatio":0.9,"$type":"NodeCanvas.Tasks.Actions.PlayAudioAtPosition"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":138.2543,"y":407.5933},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"2"},{"_action":{"actions":[{"radiusBBP":{"_value":1.0},"travelTimeBBP":{"_value":2.0},"heightIncreaseBBP":{"_value":3.0},"$type":"NodeCanvas.Tasks.Actions.ThrowBarrelAT"},{"waitTime":{"_value":0.5},"$type":"NodeCanvas.Tasks.Actions.Wait"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":350.8097,"y":406.7143},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _boundGraphSerialization: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[{"_position":{"x":174.7041,"y":223.7191},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"0"},{"_action":{"actions":[{"barrelBBP":{"_name":"target","_targetVariableID":"cea363aa-6f1f-4e47-85d8-523f901b0e6e"},"$type":"NodeCanvas.Tasks.Actions.TestGetBarrelAT"},{"controllerBBP":{"_name":"controller","_targetVariableID":"7e25e255-a9b2-4b39-a129-d8e4ac053ea3"},"navAgentBBP":{"_name":"navAgent","_targetVariableID":"08a6a401-6f21-461e-ba7b-b0ebfc649ed9"},"targetBBP":{"_name":"target","_targetVariableID":"cea363aa-6f1f-4e47-85d8-523f901b0e6e"},"$type":"NodeCanvas.Tasks.Actions.TestNavigateToObjectAT"},{"gameObjectBBP":{"_name":"target","_targetVariableID":"cea363aa-6f1f-4e47-85d8-523f901b0e6e"},"$type":"NodeCanvas.Tasks.Actions.TestDestroyObjectAT"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":-93.09728,"y":403.196},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"1"},{"_action":{"executionMode":1,"actions":[{"animationClip":{"_value":1},"mixTransformName":{},"animationLayer":{},"queueAnimation":true,"$type":"NodeCanvas.Tasks.Actions.PlayAnimationAdvanced"},{"audioClip":{"_value":2},"waitActionFinish":true,"waitRatio":0.9,"$type":"NodeCanvas.Tasks.Actions.PlayAudioAtPosition"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":138.2543,"y":406.5933},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"2"},{"_action":{"actions":[{"radiusBBP":{"_value":1.0},"travelTimeBBP":{"_value":2.0},"heightIncreaseBBP":{"_value":3.0},"$type":"NodeCanvas.Tasks.Actions.ThrowBarrelAT"},{"waitTime":{"_value":0.5},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.Wait"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":350.8097,"y":406.7143},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 7400000, guid: 3cd8d484a42689a43afc8e2c9a7aa27f, type: 2}
@@ -33903,8 +34043,8 @@ MonoBehaviour:
     _version: 3.41
     _category: 
     _comments: 
-    _translation: {x: 534, y: -75}
-    _zoomFactor: 0.7502286
+    _translation: {x: 623.69543, y: -202.98346}
+    _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0
   _disableAction: 0
